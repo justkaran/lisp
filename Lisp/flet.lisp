@@ -1,0 +1,11 @@
+(flet ((double-it (num)
+  (* num 2))
+  (triple-it (num)
+  (* num 3)))
+  (format t "Double & Triple 10 = ~a ~%" (triple-it(double-it 10))))
+
+(labels ((double-it (num)
+    (* num 2))
+        (triple-it (num)
+    (* (triple-it num) 3)))
+        (format t "~a ~%" ))
